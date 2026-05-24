@@ -1,0 +1,95 @@
+body{
+    margin:0;
+    padding:0;
+    background:linear-gradient(135deg,#ffc0cb,#ffe6f0);
+    text-align:center;
+    font-family:Arial;
+    overflow-x:hidden;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#ff2e63;
+    color:white;
+    font-size:18px;
+}
+
+.surat{
+    width:80%;
+    margin:auto;
+    margin-top:20px;
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    display:none;
+    animation:muncul 1s;
+}
+
+@keyframes muncul{
+    from{
+        opacity:0;
+        transform:scale(0.7);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1);
+    }
+
+}
+
+.foto-utama{
+    width: 90%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.galeri{
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.galeri h2{
+    color: #ff2e63;
+    margin-bottom: 20px;
+}
+
+.grid-foto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-foto img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.grid-foto img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* TARUH DI SINI 👇 */
+.grid-foto img:active{
+    transform: scale(1.8);
+    z-index: 999;
+}
+
+.grid-foto img{
+    transition: transform 0.3s ease;
+}

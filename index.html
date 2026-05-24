@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Halo sayang ❤️</title>
+
+<style>
+
+body{
+    margin:0;
+    padding:0;
+    background:linear-gradient(135deg,#ffc0cb,#ffe6f0);
+    text-align:center;
+    font-family:Arial;
+}
+
+h1{
+    margin-top:40px;
+    color:#ff2e63;
+    font-size:40px;
+}
+
+p{
+    color:#444;
+    font-size:20px;
+}
+
+img{
+    width:250px;
+    border-radius:20px;
+    margin-top:20px;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+}
+
+/* Tombol */
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    border-radius:30px;
+    background:#ff2e63;
+    color:white;
+    font-size:18px;
+}
+
+/* Surat */
+
+.surat{
+    width:80%;
+    margin:auto;
+    margin-top:20px;
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    display:none;
+}
+
+/* Hujan hati */
+
+.heart{
+    position:fixed;
+    top:-10px;
+    color:red;
+    animation:fall linear forwards;
+    z-index:999;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Musik -->
+<audio id="bgmusic" autoplay loop>
+    <source src="lagu.mp3" type="audio/mpeg">
+</audio>
+<script>
+window.addEventListener("load", function () {
+    let music = document.getElementById("bgmusic");
+
+    let playPromise = music.play();
+
+    if (playPromise !== undefined) {
+        playPromise.catch(() => {
+            // kalau autoplay diblokir, aktifkan saat user klik
+            document.body.addEventListener("click", function () {
+                music.play();
+            }, { once: true });
+        });
+    }
+});
+</script>
+
+<h1>Halo sayangku ❤️</h1>
+
+<img id="slide" src="foto1.jpg">
+
+<p id="teks"></p>
+
+<button onclick="bukaSurat()">Buka Surat 💌</button>
+
+<div id="surat" class="surat">
+
+<h2>Untuk Kamu ❤️</h2>
+
+<p>
+Aku mau kamu tahu pelan-pelan dan jujur dari aku, kalau kamu itu bukan sekadar orang yang lewat di hidup aku. Kamu punya tempat yang beda, yang nggak bisa digantikan sama siapa pun. Aku sayang kamu, dan itu bukan cuma kata-kata, tapi sesuatu yang aku rasain dan aku pilih setiap hari.Aku mungkin nggak selalu bisa nunjukin dengan cara yang sempurna, dan aku tahu kadang aku bisa bikin kamu ragu atau kepikiran banyak hal. Tapi satu yang harus kamu percaya, aku nggak pernah ngebandingin kamu sama siapa pun, dan aku nggak punya niat untuk ninggalin kamu.Aku pengen kita sama-sama jalan, bukan cuma aku yang berjuang sendiri atau kamu yang berjuang sendiri. Aku pengen kita saling ngerti, saling jaga, dan sama-sama usaha supaya hubungan ini nggak cuma bertahan, tapi juga tumbuh jadi lebih baik. Aku percaya kita bisa jadi lebih kuat kalau kita nggak saling ninggalin pas lagi capek atau salah paham.Kamu itu orang yang aku pilih, dan aku pengen terus milih kamu, bukan karena terpaksa, tapi karena aku yakin kamu yang paling aku mau. Jadi kalau kamu juga masih mau aku di hidup kamu, aku siap buat sama-sama belajar, sama-sama memperbaiki, dan sama-sama bikin kita jadi lebih baik dari sebelumnya. 🤍 ✨
+</p>
+
+</div>
+
+<!-- TEST SCROLL -->
+<div style="height:1000px;"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+<section class="galeri">
+    <h2>Kenangan Kita 💖</h2>
+
+    <div class="grid-foto">
+        <img src="foto8.jpg" alt="">
+        <img src="foto9.jpg" alt="">
+        <img src="foto10.jpg" alt="">
+        <img src="foto11.jpg" alt="">
+        <img src="foto12.jpg" alt="">
+        <img src="foto13.jpg" alt="">
+    </div>
+</section>
